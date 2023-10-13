@@ -44,4 +44,8 @@
   .clip {
     clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
   }
+
+  .custom-underline {
+    box-shadow: inset 0 -0.175em white, inset 0 -0.2em #000;
+  }
 }

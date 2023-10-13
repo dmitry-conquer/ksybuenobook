@@ -2,7 +2,7 @@
 <html lang="uk">
   @@include('components/head.html', { 'title': 'Головна' })
   <body>
-    <div class="flex flex-col min-h-screen">
+    <div class="flex flex-col min-h-screen overflow-hidden relative">
       @@include('components/header.html', { })
       <main class="grow">
         <section class="relative py-12">
@@ -195,7 +195,8 @@
                   <span class="w-full bg-secondary-light h-3 absolute left-0 bottom-[2px]"></span>
                 </div>
               </div>
-              <div class="flex grow flex-col items-center gap-7 text-center justify-center  py-6 px-4 sm:py-12 sm:px-20 bg-primary">
+              <div
+                class="flex grow flex-col items-center gap-7 text-center justify-center py-6 px-4 sm:py-12 sm:px-20 bg-primary">
                 <p class="font-bold text-4xl sm:text-7xl">400 ₴</p>
                 <p class="text-base italic">
                   Ви дізнаєтеся про те, як голодування може впливати на ваше тіло, енергію, імунну систему та інші
@@ -207,6 +208,110 @@
                   Придбати книгу — 400₴
                 </button>
               </div>
+            </div>
+          </div>
+        </section>
+        <section id="about" class="bg-tertiary pt-20 pb-16 mb-24 xl:mb-3">
+          <div class="container flex gap-12 relative">
+            <div
+              data-da="#about-content,1280,1"
+              class="xl:my-0 my-12 xl:mb-0 bg-cover bg-[center_top_-3rem] mx-auto lg:mr-auto lg:ml-0 bg-no-repeat xl:absolute xl:left-0 xl:top-0 max-sm:w-[90%] w-[30rem] h-[128%] max-sm:h-[22rem] max-xl:h-[31.25rem]"
+              style="background-image: url('./img/ksy2.webp')"></div>
+            <div id="about-content" class="xl:max-w-[46rem] xl:ml-auto">
+              <div class="flex mb-4 max-lg:justify-center">
+                <div class="relative inline-flex">
+                  <h2
+                    class="font-cormorant whitespace-nowrap max-lg:text-center font-bold md:text-left text-[1.4rem] sm:text-4xl md:text-5xl uppercase relative z-10">
+                    Привіт, з вами «КсюБуено»
+                  </h2>
+                  <span class="w-full bg-secondary-light h-3 absolute left-0 bottom-[2px]"></span>
+                </div>
+              </div>
+              <div class="text-base sm:text-xl space-y-5">
+                <p>Я — сертифікований експерт з Інтервального голодування.</p>
+                <p>
+                  Уже близько трьох років провожу групові супроводи та персональні коучинг-програми. Я навчаю дівчат
+                  худнути та насолоджуватись новим стилем життя.
+                </p>
+                <p>
+                  Інтервальне голодування в 2020-му році змінило моє життя, тобто розділило його на відчутне ДО і ПІСЛЯ.
+                </p>
+                <p>
+                  Згодом, вивчивши безліч літератури, досліджень, відео, підкастів, а також пройшовши міжнародну
+                  сертифікацію — я почала допомогати іншим.
+                </p>
+                <p>
+                  На сьогодні це більше ніж 2000+ задоволених клієнтів та учениць, які досягли своєї фігури мрії
+                  без жорстких і важких обмежень.
+                </p>
+                <p>
+                  Сказав би мені хтось, що у липні 2022-го року я буду на Балі писати книгу, не повірила б… І так само
+                  я б не повірила у свою кругосвітню подорож на початку 2022-го року…
+                </p>
+                <p>
+                  Тож якщо я відчуваю, що хочу облётіти планету за місяць, то чого чекати. І з книгою так само,
+                  я відчула, що пора…
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container">
+            <div class="flex gap-x-3 flex-wrap items-center mb-8 justify-center xl:justify-end xl:pr-20">
+              <div class="relative inline-flex">
+                <h2
+                  class="font-cormorant whitespace-nowrap max-lg:text-center font-bold md:text-left text-[1.4rem] sm:text-4xl md:text-5xl uppercase relative z-10">
+                  мій інстаграм
+                </h2>
+                <span class="w-full bg-secondary-light h-3 absolute left-0 bottom-[2px]"></span>
+              </div>
+              <span class="text-4xl sm:text-6xl -rotate-[8deg]">-</span>
+              <a
+                href="https://www.instagram.com/ksybueno/"
+                class="text-secondary hover:text-secondary-light transition-colors underline font-cormorant font-bold text-[1.4rem] sm:text-4xl md:text-5xl uppercase"
+                >ksybueno</a
+              >
+            </div>
+            <!-- grid -->
+            <div
+              class="grid grid-cols-4 gap-5 max-md:[&>*:nth-child(-n+4)]:col-span-2 [&>*:nth-last-child(-n+2)]:col-span-4 sm:[&>*:nth-last-child(-n+2)]:col-span-2">
+              <a href="./img/insta/img1.webp" class="overflow-hidden" data-fslightbox="instagram"
+                ><img
+                  class="hover:scale-105 transition-transform duration-500"
+                  src="./img/insta/img1.webp"
+                  alt="instagram @KSYBUENO"
+              /></a>
+              <a href="./img/insta/img2.webp" class="overflow-hidden" data-fslightbox="instagram"
+                ><img
+                  class="hover:scale-105 transition-transform duration-500"
+                  src="./img/insta/img2.webp"
+                  alt="instagram @KSYBUENO"
+              /></a>
+              <a href="./img/insta/img3.webp" class="overflow-hidden" data-fslightbox="instagram"
+                ><img
+                  class="hover:scale-105 transition-transform duration-500"
+                  src="./img/insta/img3.webp"
+                  alt="instagram @KSYBUENO"
+              /></a>
+              <a href="./img/insta/img4.webp" class="overflow-hidden" data-fslightbox="instagram"
+                ><img
+                  class="hover:scale-105 transition-transform duration-500"
+                  src="./img/insta/img4.webp"
+                  alt="instagram @KSYBUENO"
+              /></a>
+              <a href="./img/insta/img5.webp" class="overflow-hidden" data-fslightbox="instagram"
+                ><img
+                  class="hover:scale-105 transition-transform duration-500"
+                  src="./img/insta/img5.webp"
+                  alt="instagram @KSYBUENO"
+              /></a>
+              <a href="./img/insta/img6.webp" class="overflow-hidden" data-fslightbox="instagram"
+                ><img
+                  class="hover:scale-105 transition-transform duration-500"
+                  src="./img/insta/img6.webp"
+                  alt="instagram @KSYBUENO"
+              /></a>
             </div>
           </div>
         </section>

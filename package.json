@@ -27,6 +27,7 @@
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-webpack-plugin": "^4.0.1",
+    "fslightbox": "^3.4.1",
     "gulp": "^4.0.2",
     "gulp-cheerio": "^1.0.0",
     "gulp-file-include": "^2.3.0",
@@ -59,8 +60,8 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-config-prettier-airbnb": "^0.5.0",
     "gulp-postcss": "^9.0.1",
-    "terser-webpack-plugin": "^5.3.9",
     "micromodal": "^0.4.10",
-    "tailwindcss": "^3.3.3"
+    "tailwindcss": "^3.3.3",
+    "terser-webpack-plugin": "^5.3.9"
   }
 }
