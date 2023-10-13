@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "fonts";
+
+@layer base {
+  body {
+    @apply text-dark text-xl font-montserrat;
+  }
+}
+
+@layer components {
+  #burger-inner {
+    &.active-burger {
+      @apply [&>*:nth-child(-n+3)]:translate-x-10;
+    }
+  }
+  #burger-cross {
+    &.active-burger {
+      @apply w-12 translate-x-0  [&>*:nth-child(1)]:rotate-45 [&>*:nth-child(2)]:-rotate-45;
+    }
+  }
+  #header-nav {
+    &.active-menu {
+      @apply max-lg:right-0;
+    }
+  }
+  #to-top-btn {
+    &.is-visible {
+      @apply opacity-100 visible;
+    }
+  }
+  #main-header {
+    &.scroll {
+      @apply bg-primary/70 backdrop-blur-sm;
+    }
+  }
+}
+
+@layer utilities {
+  .clip {
+    clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+  }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+  @@include('components/head.html', { 'title': 'Головна' })
+  <body>
+    <div class="flex flex-col min-h-screen">
+      @@include('components/header.html', { })
+      <main class="grow">
+        <section class="relative py-12">
+          <img
+            src="./img/header-vector.svg"
+            alt=""
+            class="absolute right-[35%] top-0 w-[240%] md:h-[500px] lg:h-[540px] xl:h-[640px] z-[-1]" />
+          <div
+            class="container lg:flex-row flex-col flex items-center gap-14 lg:gap-16 xl:gap-24 pt-16 sm:pt-20 md:pt-24">
+            <img
+              src="./img/book.webp"
+              alt="Інтервальне голодування"
+              class="w-[80%] sm:w-[60%] md:w-[20rem] lg:w-[23rem] xl:w-[25rem] object-contain hover:scale-[1.02] transition-transform duration-500" />
+            <div class="">
+              <div class="mb-11">
+                <h1
+                  class="font-cormorant lg:-ml-6 text-center lg:text-left text-3xl lg:text-4xl xl:text-5xl mb-2 uppercase font-semibold">
+                  «Інтервальне голодування»
+                </h1>
+                <p class="text-base sm:text-lg xl:text-xl">
+                  Книга, яка відкриє секрети здоров'я і довголіття за допомогою інтервального голодування. Почніть свій
+                  шлях до здорового життя прямо зараз!
+                </p>
+              </div>
+              <div
+                class="justify-center lg:justify-start lg:mb-16 xl:mb-24 flex flex-col max-sm:items-center sm:flex-row gap-5">
+                <button
+                  class="uppercase text-center p-4 bg-secondary max-sm:w-full text-base xl:text-xl text-white font-semibold hover:bg-secondary/80 duration-300 transition-colors"
+                  type="button">
+                  Придбати книгу — 400₴
+                </button>
+                <a
+                  class="uppercase text-center bg-white p-4 text-base xl:text-xl text-secondary max-sm:w-full font-semibold border-2 border-secondary hover:bg-primary/70 duration-300 transition-colors"
+                  href=""
+                  >дізнатися більше</a
+                >
+              </div>
+              <ul class="hidden lg:grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-x-11 lg:gap-y-3 xl:gap-y-5">
+                <li class="whitespace-nowrap text-base">✓ Покращення самопочуття</li>
+                <li class="whitespace-nowrap text-base">✓ Здоровий спосіб життя</li>
+                <li class="whitespace-nowrap text-base">✓ Баланс гормонів</li>
+                <li class="whitespace-nowrap text-base">✓ Покращення стану шкіри</li>
+                <li class="whitespace-nowrap text-base">✓ Збільшення енергії</li>
+                <li class="whitespace-nowrap text-base">✓ Покращення сну</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="py-12">
+          <div class="container">
+            <div class="flex max-md:justify-center">
+              <div class="relative mb-5 sm:mb-11 inline-flex">
+                <h2
+                  class="font-cormorant font-bold text-center md:text-left text-2xl sm:text-4xl md:text-5xl uppercase relative z-10 mr-2">
+                  В книзі на вас чекає
+                </h2>
+                <span class="w-full bg-secondary-light h-3 absolute left-0 bottom-[2px]"></span>
+              </div>
+            </div>
+            <ul class="grid grid-cols-1 lg:grid-cols-2 gap-y-5 md:gap-y-12 gap-x-5">
+              <li class="text-base md:text-xl">✓ Детальний розгляд інтервального голодування та його переваги для здоров'я та фізичної форми.</li>
+              <li class="text-base md:text-xl">
+                ✓ Практичні поради, які допоможуть вам насолоджуватися життям і зберігати гармонію зі своїм тілом.
+              </li>
+              <li class="text-base md:text-xl">✓ Огляд впливу звичних продуктів на ваш організм та поради щодо здорового харчування.</li>
+              <li class="text-base md:text-xl">✓ Вдячні історії успішного схуднення, які надихнуть вас на досягнення своїх цілей.</li>
+              <li class="text-base md:text-xl">
+                ✓ Підходи та стратегії для досягнення та підтримання бажаної фізичної форми без жорстких обмежень.
+              </li>
+              <li class="text-base md:text-xl">
+                ✓ Практичні поради для створення здорового способу життя, який допоможе насолоджуватися кожним днём.
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      @@include('components/footer.html', { }) @@include('components/modal.html', { })
+    </div>
+    <script type="module" crossorigin src="./js/app.min.js"></script>
+  </body>
+</html>

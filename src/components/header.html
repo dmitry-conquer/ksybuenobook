@@ -1,0 +1,45 @@
+<header id="main-header" class="fixed left-0 top-0 w-full z-20 transition-all duration-300">
+  <div class="container flex justify-between  h-16 md:h-20 items-center gap-20">
+    <a href="/" class="uppercase text-white font-bold">KSYBUENO</a>
+    <nav
+      id="header-nav"
+      class="md:static z-20 md:shadow-none shadow-md max-md:min-h-screen fixed md:p-0 pt-32 flex flex-col transition-all duration-500 max-md:-right-[100%] items-center gap-8 max-md:top-0 max-sm:w-full max-md:w-[320px] bg-white md:bg-transparent">
+      <ul class="flex flex-col md:flex-row gap-y-12 gap-x-6 lg:gap-12 max-md:min-h-screen max-md:text-center">
+        <li>
+          <a class="hover:text-secondary font-medium transition-colors uppercase text-inherit text-xl md:text-sm lg:text-base" href="#book">що в книзі</a>
+        </li>
+        <li>
+          <a class="hover:text-secondary font-medium transition-colors uppercase text-inherit text-xl md:text-sm lg:text-base" href="#for-whom"
+            >для кого</a
+          >
+        </li>
+        <li>
+          <a class="hover:text-secondary font-medium transition-colors uppercase text-inherit text-xl md:text-sm lg:text-base" href="#about">про автора</a>
+        </li>
+        <li>
+          <a class="hover:text-secondary font-medium transition-colors uppercase text-inherit text-xl md:text-sm lg:text-base" href="#contacts"
+            >контакти</a
+          >
+        </li>
+        <li><a class="hover:text-secondary font-medium transition-colors uppercase text-inherit text-xl md:text-sm lg:text-base" href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+    <div role="button" id="burger-button" class="group block md:hidden relative z-40">
+      <div class="relative flex h-[50px] w-[50px] transform items-center justify-center overflow-hidden">
+        <div
+          id="burger-inner"
+          class="flex h-[20px] w-[25px] origin-center transform flex-col justify-between overflow-hidden transition-all duration-300">
+          <div class="h-[2px] w-7 origin-left transform bg-dark transition-all duration-300"></div>
+          <div class="h-[2px] w-7 transform rounded bg-dark transition-all delay-75 duration-300"></div>
+          <div class="h-[2px] w-7 origin-left transform bg-dark transition-all delay-150 duration-300"></div>
+          <div
+            id="burger-cross"
+            class="absolute top-2.5 flex w-0 -translate-x-10 transform items-center justify-between transition-all duration-500">
+            <div class="absolute h-[2px] w-5 rotate-0 transform bg-dark transition-all delay-300 duration-500"></div>
+            <div class="absolute h-[2px] w-5 -rotate-0 transform bg-dark transition-all delay-300 duration-500"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
