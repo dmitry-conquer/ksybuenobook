@@ -1,9 +1,14 @@
+@import "../../node_modules/aos/src/sass/aos.scss";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @import "fonts";
 
 @layer base {
+  html {
+    @apply scroll-smooth scroll-p-28;
+  }
   body {
     @apply text-dark text-xl font-montserrat;
   }
@@ -36,6 +41,11 @@
       #header-logo {
         @apply text-dark;
       }
+    }
+  }
+  .active-spoiler {
+    svg {
+      @apply rotate-180;
     }
   }
 }

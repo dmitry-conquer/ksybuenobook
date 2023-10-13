@@ -5,7 +5,7 @@
     <div class="flex flex-col min-h-screen overflow-hidden relative">
       @@include('components/header.html', { })
       <main class="grow">
-        <section class="relative py-12">
+        <section class="relative mb-16 md:mb-32 pt-12">
           <img
             src="./img/header-vector.svg"
             alt=""
@@ -13,16 +13,18 @@
           <div
             class="container lg:flex-row flex-col flex items-center gap-14 lg:gap-16 xl:gap-24 pt-16 sm:pt-20 md:pt-24">
             <img
+            data-aos="fade-up" data-aos-delay="150"
               src="./img/book.webp"
               alt="Інтервальне голодування"
               class="w-[80%] sm:w-[60%] md:w-[20rem] lg:w-[23rem] xl:w-[25rem] object-contain hover:scale-[1.02] transition-transform duration-500" />
             <div class="">
               <div class="mb-11">
                 <h1
-                  class="font-cormorant lg:-ml-6 text-center lg:text-left text-3xl lg:text-4xl xl:text-5xl mb-2 uppercase font-semibold">
+                data-aos="fade-up"
+                  class="font-cormorant lg:-ml-6 text-center lg:text-left text-3xl lg:text-4xl xl:text-5xl mb-2 uppercase font-semibold sm:text-xl">
                   «Інтервальне голодування»
                 </h1>
-                <p class="text-base sm:text-lg xl:text-xl">
+                <p   data-aos="fade-up" data-aos-delay="100" class="text-base sm:text-lg xl:text-xl">
                   Книга, яка відкриє секрети здоров'я і довголіття за допомогою інтервального голодування. Почніть свій
                   шлях до здорового життя прямо зараз!
                 </p>
@@ -30,17 +32,19 @@
               <div
                 class="justify-center lg:justify-start lg:mb-16 xl:mb-24 flex flex-col max-sm:items-center sm:flex-row gap-5">
                 <button
+                data-aos="fade-up" data-aos-delay="150"
                   class="uppercase text-center p-4 bg-secondary max-sm:w-full text-base xl:text-xl text-white font-bold hover:bg-secondary/80 duration-300 transition-colors"
                   type="button">
                   Придбати книгу — 400₴
                 </button>
                 <a
+                data-aos="fade-up" data-aos-delay="200"
                   class="uppercase text-center bg-white p-4 text-base xl:text-xl text-secondary max-sm:w-full font-bold border-2 border-secondary hover:bg-primary/70 duration-300 transition-colors"
                   href=""
                   >дізнатися більше</a
                 >
               </div>
-              <ul class="hidden lg:grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-x-11 lg:gap-y-3 xl:gap-y-5">
+              <ul data-aos="fade-up" data-aos-delay="250" class="hidden lg:grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-x-11 lg:gap-y-3 xl:gap-y-5">
                 <li class="whitespace-nowrap text-base">✓ Покращення самопочуття</li>
                 <li class="whitespace-nowrap text-base">✓ Здоровий спосіб життя</li>
                 <li class="whitespace-nowrap text-base">✓ Баланс гормонів</li>
@@ -51,9 +55,9 @@
             </div>
           </div>
         </section>
-        <section class="mb-28">
+        <section class="mb-16 md:mb-32" id="book">
           <div class="container">
-            <div class="flex max-md:justify-center">
+            <div data-aos="fade-up" class="flex max-md:justify-center">
               <div class="relative mb-8 sm:mb-12 inline-flex">
                 <h2
                   class="font-cormorant font-bold text-center md:text-left text-2xl sm:text-4xl md:text-5xl uppercase relative z-10 mr-2">
@@ -63,42 +67,43 @@
               </div>
             </div>
             <ul class="grid grid-cols-1 lg:grid-cols-2 gap-y-5 md:gap-y-12 gap-x-5">
-              <li class="text-base md:text-xl">
+              <li data-aos="fade-up" class="text-base md:text-xl">
                 ✓ Детальний розгляд інтервального голодування та його переваги для здоров'я та фізичної форми.
               </li>
-              <li class="text-base md:text-xl">
+              <li data-aos="fade-up" class="text-base md:text-xl">
                 ✓ Практичні поради, які допоможуть вам насолоджуватися життям і зберігати гармонію зі своїм тілом.
               </li>
-              <li class="text-base md:text-xl">
+              <li data-aos="fade-up" class="text-base md:text-xl">
                 ✓ Огляд впливу звичних продуктів на ваш організм та поради щодо здорового харчування.
               </li>
-              <li class="text-base md:text-xl">
+              <li data-aos="fade-up" class="text-base md:text-xl">
                 ✓ Вдячні історії успішного схуднення, які надихнуть вас на досягнення своїх цілей.
               </li>
-              <li class="text-base md:text-xl">
+              <li data-aos="fade-up" class="text-base md:text-xl">
                 ✓ Підходи та стратегії для досягнення та підтримання бажаної фізичної форми без жорстких обмежень.
               </li>
-              <li class="text-base md:text-xl">
+              <li data-aos="fade-up" class="text-base md:text-xl">
                 ✓ Практичні поради для створення здорового способу життя, який допоможе насолоджуватися кожним днём.
               </li>
             </ul>
           </div>
         </section>
-        <section class="mb-24 bg-tertiary sm:bg-white">
+        <section class="mb-16 md:mb-32 bg-tertiary sm:bg-white">
           <div class="container md:px-14 relative">
             <div
               class="pb-10 pt-0 md:py-10 px-0 sm:px-4 md:px-12 bg-tertiary flex flex-col-reverse items-center lg:flex-row">
               <div class="lg:mr-[20%]">
                 <div class="mb-10">
                   <h2
+                  data-aos="fade-up"
                     class="font-cormorant font-bold md:text-left mb-2.5 text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase">
                     Не втрачайте шанс змінити своє життя. Замовте книгу прямо зараз!
                   </h2>
-                  <p class="text-base md:text-xl">
+                  <p data-aos="fade-up" data-aos-delay="100" class="text-base md:text-xl">
                     Жодних обмежень. Без підрахунку калорій. Їсти все, що любиш. Швидкий шлях до нового життя.
                   </p>
                 </div>
-                <div class="flex lg:justify-start justify-center">
+                <div data-aos="fade-up" data-aos-delay="150" class="flex lg:justify-start justify-center">
                   <button
                     class="uppercase text-center p-4 bg-secondary max-sm:w-full text-base xl:text-xl text-white font-bold hover:bg-secondary-light duration-300 transition-colors"
                     type="button">
@@ -107,15 +112,16 @@
                 </div>
               </div>
               <img
+             
                 src="./img/book.webp"
                 alt="інтервальне голодування"
                 class="w-[14rem] md:w-[18rem] lg:absolute lg:right-0 lg:top-1/2 lg:-translate-y-1/2 -translate-y-10 sm:-translate-y-12 md:-translate-y-20" />
             </div>
           </div>
         </section>
-        <section class="mb-24">
+        <section class="mb-16 md:mb-32" id="for-whom">
           <div class="container">
-            <div class="flex mb-8 sm:mb-12 justify-center">
+            <div data-aos="fade-up" class="flex mb-8 sm:mb-12 justify-center">
               <div class="relative inline-flex">
                 <h2
                   class="font-cormorant whitespace-nowrap font-bold text-center md:text-left text-2xl sm:text-4xl md:text-5xl uppercase relative z-10">
@@ -125,42 +131,44 @@
               </div>
             </div>
             <div class="grid gap-x-7 gap-y-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-              <div>
+              <div data-aos="fade-up">
                 <div class="py-[1.13rem] bg-primary mb-4 text-lg lg:text-xl text-center px-4">
-                  <h3 class="uppercase font-semibold">Для тих, хто втомився від постійних дієт</h3>
+                  <h3 class="uppercase font-semibold text-base sm:text-xl">Для тих, хто втомився від постійних дієт</h3>
                 </div>
                 <p class="text-center text-base sm:text-lg md:text-xl">
                   Якщо вам вже набридали дієти і відчуваєте, що вони не приносять бажаних результатів
                 </p>
               </div>
-              <div>
+              <div data-aos="fade-up">
                 <div class="py-[1.13rem] bg-primary mb-4 text-lg lg:text-xl text-center px-4">
-                  <h3 class="uppercase font-semibold">Для бажаючих змінити свій стиль життя</h3>
+                  <h3 class="uppercase font-semibold text-base sm:text-xl">Для бажаючих змінити свій стиль життя</h3>
                 </div>
                 <p class="text-center text-base sm:text-lg md:text-xl">
                   Якщо ви бажаєте змінити спосіб життя і створити стійкі корисні звички, що служитимуть вам протягом
                   усього життя
                 </p>
               </div>
-              <div>
+              <div data-aos="fade-up">
                 <div class="py-[1.13rem] bg-primary mb-4 text-lg lg:text-xl text-center px-4">
-                  <h3 class="uppercase font-semibold">Для тих, хто мріє про краще здоров'я</h3>
+                  <h3 class="uppercase font-semibold text-base sm:text-xl">Для тих, хто мріє про краще здоров'я</h3>
                 </div>
                 <p class="text-center text-base sm:text-lg md:text-xl">
                   Якщо ваша мрія — покращити фізичну форму, відчувати себе краще та бути здоровим
                 </p>
               </div>
-              <div>
+              <div data-aos="fade-up">
                 <div class="py-[1.13rem] bg-primary mb-4 text-lg lg:text-xl text-center px-4">
-                  <h3 class="uppercase font-semibold">Для любителів насолоджуватися їжею</h3>
+                  <h3 class="uppercase font-semibold text-base sm:text-xl">Для любителів насолоджуватися їжею</h3>
                 </div>
                 <p class="text-center text-base sm:text-lg md:text-xl">
                   Якщо ви хочете насолоджуватися їжею та не бажаєте обмежуватись у своїх улюблених стравах
                 </p>
               </div>
-              <div>
+              <div data-aos="fade-up">
                 <div class="py-[1.13rem] bg-primary mb-4 text-lg lg:text-xl text-center px-4">
-                  <h3 class="uppercase font-semibold">для тих, хто хоче добитися поставлених цілей</h3>
+                  <h3 class="uppercase font-semibold text-base sm:text-xl">
+                    для тих, хто хоче добитися поставлених цілей
+                  </h3>
                 </div>
                 <p class="text-center text-base sm:text-lg md:text-xl">
                   Ви знайдете практичні інструменти, які допоможуть вам досягнути бажаних результатів
@@ -169,9 +177,9 @@
             </div>
           </div>
         </section>
-        <section class="mb-24">
+        <section class="mb-16 md:mb-24">
           <div class="sm:container grid auto-rows-auto grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8">
-            <div class="flex flex-col">
+            <div data-aos="fade-up" class="flex flex-col">
               <div class="flex mb-6 md:mb-12 justify-center">
                 <div class="relative inline-flex">
                   <h3
@@ -181,11 +189,11 @@
                   <span class="w-full bg-secondary-light h-3 absolute left-0 bottom-[2px]"></span>
                 </div>
               </div>
-              <a href="#" target="_blank" class="grow">
-                <img src="./img/ytube-logo.webp" alt="Посилання на Ютуб канал" class="w-full h-full block" />
+              <a href="#" target="_blank" class="grow group overflow-hidden">
+                <img src="./img/ytube-logo.webp" alt="Посилання на Ютуб канал" class="w-full group-hover:scale-105 transition-transform duration-500 sm:w-[70%] mx-auto lg:w-full lg:h-full block" />
               </a>
             </div>
-            <div class="flex flex-col">
+            <div data-aos="fade-up" data-aos-delay="100" class="flex flex-col">
               <div class="flex mb-6 md:mb-12 justify-center">
                 <div class="relative inline-flex">
                   <h3
@@ -211,14 +219,14 @@
             </div>
           </div>
         </section>
-        <section id="about" class="bg-tertiary pt-20 pb-16 mb-24 xl:mb-3">
+        <section id="about" class="bg-tertiary pt-20 pb-16 mb-16 md:mb-24 xl:mb-3">
           <div class="container flex gap-12 relative">
             <div
               data-da="#about-content,1280,1"
               class="xl:my-0 my-12 xl:mb-0 bg-cover bg-[center_top_-3rem] mx-auto lg:mr-auto lg:ml-0 bg-no-repeat xl:absolute xl:left-0 xl:top-0 max-sm:w-[90%] w-[30rem] h-[128%] max-sm:h-[22rem] max-xl:h-[31.25rem]"
               style="background-image: url('./img/ksy2.webp')"></div>
             <div id="about-content" class="xl:max-w-[46rem] xl:ml-auto">
-              <div class="flex mb-4 max-lg:justify-center">
+              <div data-aos="fade-up" class="flex mb-4 max-lg:justify-center">
                 <div class="relative inline-flex">
                   <h2
                     class="font-cormorant whitespace-nowrap max-lg:text-center font-bold md:text-left text-[1.4rem] sm:text-4xl md:text-5xl uppercase relative z-10">
@@ -227,7 +235,7 @@
                   <span class="w-full bg-secondary-light h-3 absolute left-0 bottom-[2px]"></span>
                 </div>
               </div>
-              <div class="text-base sm:text-xl space-y-5">
+              <div data-aos="fade-up" data-aos-delay="100" class="text-base sm:text-xl space-y-5">
                 <p>Я — сертифікований експерт з Інтервального голодування.</p>
                 <p>
                   Уже близько трьох років провожу групові супроводи та персональні коучинг-програми. Я навчаю дівчат
@@ -256,9 +264,9 @@
             </div>
           </div>
         </section>
-        <section>
+        <section class="mb-24">
           <div class="container">
-            <div class="flex gap-x-3 flex-wrap items-center mb-8 justify-center xl:justify-end xl:pr-20">
+            <div data-aos="fade-up" class="flex gap-x-3 flex-wrap items-center mb-8 justify-center xl:justify-end xl:pr-20">
               <div class="relative inline-flex">
                 <h2
                   class="font-cormorant whitespace-nowrap max-lg:text-center font-bold md:text-left text-[1.4rem] sm:text-4xl md:text-5xl uppercase relative z-10">
@@ -276,37 +284,37 @@
             <!-- grid -->
             <div
               class="grid grid-cols-4 gap-5 max-md:[&>*:nth-child(-n+4)]:col-span-2 [&>*:nth-last-child(-n+2)]:col-span-4 sm:[&>*:nth-last-child(-n+2)]:col-span-2">
-              <a href="./img/insta/img1.webp" class="overflow-hidden" data-fslightbox="instagram"
+              <a href="./img/insta/img1.webp" data-aos="fade-up" class="overflow-hidden" data-fslightbox="instagram"
                 ><img
                   class="hover:scale-105 transition-transform duration-500"
                   src="./img/insta/img1.webp"
                   alt="instagram @KSYBUENO"
               /></a>
-              <a href="./img/insta/img2.webp" class="overflow-hidden" data-fslightbox="instagram"
+              <a href="./img/insta/img2.webp" data-aos="fade-up" class="overflow-hidden" data-fslightbox="instagram"
                 ><img
                   class="hover:scale-105 transition-transform duration-500"
                   src="./img/insta/img2.webp"
                   alt="instagram @KSYBUENO"
               /></a>
-              <a href="./img/insta/img3.webp" class="overflow-hidden" data-fslightbox="instagram"
+              <a href="./img/insta/img3.webp" data-aos="fade-up" class="overflow-hidden" data-fslightbox="instagram"
                 ><img
                   class="hover:scale-105 transition-transform duration-500"
                   src="./img/insta/img3.webp"
                   alt="instagram @KSYBUENO"
               /></a>
-              <a href="./img/insta/img4.webp" class="overflow-hidden" data-fslightbox="instagram"
+              <a href="./img/insta/img4.webp" data-aos="fade-up" class="overflow-hidden" data-fslightbox="instagram"
                 ><img
                   class="hover:scale-105 transition-transform duration-500"
                   src="./img/insta/img4.webp"
                   alt="instagram @KSYBUENO"
               /></a>
-              <a href="./img/insta/img5.webp" class="overflow-hidden" data-fslightbox="instagram"
+              <a href="./img/insta/img5.webp" data-aos="fade-up" class="overflow-hidden" data-fslightbox="instagram"
                 ><img
                   class="hover:scale-105 transition-transform duration-500"
                   src="./img/insta/img5.webp"
                   alt="instagram @KSYBUENO"
               /></a>
-              <a href="./img/insta/img6.webp" class="overflow-hidden" data-fslightbox="instagram"
+              <a href="./img/insta/img6.webp" data-aos="fade-up" class="overflow-hidden" data-fslightbox="instagram"
                 ><img
                   class="hover:scale-105 transition-transform duration-500"
                   src="./img/insta/img6.webp"
@@ -315,8 +323,182 @@
             </div>
           </div>
         </section>
+        <section class="mb-24">
+          <div class="container grid grid-cols-1 items-center md:grid-cols-2 gap-y-5 sm:gap-y-8 gap-x-5">
+            <h2 data-aos="fade-up" class="font-cormorant font-bold text-2xl sm:text-4xl md:text-4xl xl:text-5xl uppercase !leading-normal">
+              Що зміниться у житті після покупки моєї книги?
+            </h2>
+            <div data-aos="fade-up" data-aos-delay="100" class="bg-secondary-light p-4 sm:py-8 sm:px-10">
+              <p class="text-base md:text-lg xl:text-xl">
+                Ви отримаєте глибше розуміння інтервального голодування та зможете покращити своє здоров'я, фізичну
+                форму та енергію. Книга надихне вас на створення здорового способу життя та поліпшить ваше самопочуття.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="mb-24" id="faq">
+          <div class="max-w-[53rem] mx-auto px-4">
+            <div class="flex justify-center mb-11">
+              <div class="relative inline-flex">
+                <h2
+                  class="font-cormorant whitespace-nowrap max-lg:text-center font-bold md:text-left text-[1.4rem] sm:text-4xl md:text-5xl uppercase relative z-10">
+                  ваші часті запитання
+                </h2>
+                <span class="w-full bg-secondary-light h-3 absolute left-0 bottom-[2px]"></span>
+              </div>
+            </div>
+
+            <!-- faq list -->
+            <div class="space-y-[0.3rem]">
+              <div>
+                <div
+                  data-spoiler
+                  class="py-4 px-5 sm:py-5 sm:px-7 bg-primary flex items-center justify-between gap-6 sm:gap-20">
+                  <h3 class="uppercase font-semibold text-base sm:text-xl">
+                    Чому інтервальне голодування краще за інші дієти?
+                  </h3>
+                  <svg class="w-4 h-4 transition-transform duration-300 shrink-0">
+                    <use href="./sprites/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </div>
+                <div class="overflow-hidden max-h-0 transition-all duration-300">
+                  <p class="p-4 text-base">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium est officiis libero. Excepturi
+                    nostrum, ullam aliquam qui consequuntur sint dicta quis minima odit optio mollitia voluptas
+                    laudantium? Veniam, similique quo?
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div
+                  data-spoiler
+                  class="py-4 px-5 sm:py-5 sm:px-7 bg-primary flex items-center justify-between gap-6 sm:gap-20">
+                  <h3 class="uppercase font-semibold text-base sm:text-xl">
+                    Які переваги здорового харчування пропонує ваша книга?
+                  </h3>
+                  <svg class="w-4 h-4 transition-transform duration-300 shrink-0">
+                    <use href="./sprites/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </div>
+                <div class="overflow-hidden max-h-0 transition-all duration-300">
+                  <p class="p-4 text-base">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium est officiis libero. Excepturi
+                    nostrum, ullam aliquam qui consequuntur sint dicta quis minima odit optio mollitia voluptas
+                    laudantium? Veniam, similique quo?
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div
+                  data-spoiler
+                  class="py-4 px-5 sm:py-5 sm:px-7 bg-primary flex items-center justify-between gap-6 sm:gap-20">
+                  <h3 class="uppercase font-semibold text-base sm:text-xl">
+                    Чи є обмеження в їжі під час інтервального голодування?
+                  </h3>
+                  <svg class="w-4 h-4 transition-transform duration-300 shrink-0">
+                    <use href="./sprites/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </div>
+                <div class="overflow-hidden max-h-0 transition-all duration-300">
+                  <p class="p-4 text-base">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium est officiis libero. Excepturi
+                    nostrum, ullam aliquam qui consequuntur sint dicta quis minima odit optio mollitia voluptas
+                    laudantium? Veniam, similique quo?
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div
+                  data-spoiler
+                  class="py-4 px-5 sm:py-5 sm:px-7 bg-primary flex items-center justify-between gap-6 sm:gap-20">
+                  <h3 class="uppercase font-semibold text-base sm:text-xl">Як можна отримати доступ до книги?</h3>
+                  <svg class="w-4 h-4 transition-transform duration-300 shrink-0">
+                    <use href="./sprites/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </div>
+                <div class="overflow-hidden max-h-0 transition-all duration-300">
+                  <p class="p-4 text-base">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium est officiis libero. Excepturi
+                    nostrum, ullam aliquam qui consequuntur sint dicta quis minima odit optio mollitia voluptas
+                    laudantium? Veniam, similique quo?
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div
+                  data-spoiler
+                  class="py-4 px-5 sm:py-5 sm:px-7 bg-primary flex items-center justify-between gap-6 sm:gap-20">
+                  <h3 class="uppercase font-semibold text-base sm:text-xl">
+                    Чи надаєте ви підтримку для тих, хто читає книгу?
+                  </h3>
+                  <svg class="w-4 h-4 transition-transform duration-300 shrink-0">
+                    <use href="./sprites/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </div>
+                <div class="overflow-hidden max-h-0 transition-all duration-300">
+                  <p class="p-4 text-base">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium est officiis libero. Excepturi
+                    nostrum, ullam aliquam qui consequuntur sint dicta quis minima odit optio mollitia voluptas
+                    laudantium? Veniam, similique quo?
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div
+                  data-spoiler
+                  class="py-4 px-5 sm:py-5 sm:px-7 bg-primary flex items-center justify-between gap-6 sm:gap-20">
+                  <h3 class="uppercase font-semibold text-base sm:text-xl">
+                    Чи є гарантія на результати від читання книги?
+                  </h3>
+                  <svg class="w-4 h-4 transition-transform duration-300 shrink-0">
+                    <use href="./sprites/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </div>
+                <div class="overflow-hidden max-h-0 transition-all duration-300">
+                  <p class="p-4 text-base">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium est officiis libero. Excepturi
+                    nostrum, ullam aliquam qui consequuntur sint dicta quis minima odit optio mollitia voluptas
+                    laudantium? Veniam, similique quo?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-tertiary py-6 sm:py-12">
+          <div class="max-w-5xl mx-auto px-4">
+            <div data-aos="fade-up" class="flex justify-center sm:mb-12 mb-5">
+              <div class="relative inline-flex">
+                <h2
+                  class="font-cormorant whitespace-nowrap max-lg:text-center font-bold md:text-left text-[1.4rem] sm:text-4xl md:text-5xl uppercase relative z-10">
+                  місія мого продукту
+                </h2>
+                <span class="w-full bg-secondary-light h-3 absolute left-0 bottom-[2px]"></span>
+              </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="100" class="space-y-4 text-base sm:text-xl">
+              <p>
+                Місія даної книги — допомогти людям змінити своє життя на краще. Вона призначена надати цінну інформацію
+                та інструменти для досягнення оптимальної фізичної форми, покращення здоров'я та загального самопочуття.
+              </p>
+              <p>
+                Моя мета — надихнути читачів на створення здорового способу життя, де вони можуть насолоджуватися їжею,
+                бути активними та досягати своїх цілей без жорстких обмежень. Я вірю, що кожна людина заслуговує
+                на щасливе, здорове і гармонійне життя, і ця книга є нашим кроком у напрямку досягнення цієї мети.
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
       @@include('components/footer.html', { }) @@include('components/modal.html', { })
+      <a
+        id="to-top-btn"
+        href="#"
+        class=" z-[999]  shadow-md transition-all invisible opacity-0  duration-300 grid place-content-center w-10 h-10 rounded-full bg-primary fixed right-8 bottom-8">
+        <svg class="w-4 h-4  rotate-180">
+          <use href="./sprites/sprite.svg#icon-arrow"></use>
+        </svg>
+      </a>
     </div>
     <script type="module" crossorigin src="./js/app.min.js"></script>
   </body>
