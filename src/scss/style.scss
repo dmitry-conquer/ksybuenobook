@@ -1,4 +1,7 @@
 @import "../../node_modules/aos/src/sass/aos.scss";
+@import "../../node_modules/swiper/swiper.scss";
+@import "../../node_modules/swiper/modules/navigation/navigation.scss";
+@import "../../node_modules/swiper/modules/pagination/pagination.scss";
 
 @tailwind base;
 @tailwind components;
@@ -15,6 +18,15 @@
 }
 
 @layer components {
+
+  .pagination {
+    .swiper-pagination-bullet {
+      @apply w-3 h-3;
+    }
+    .swiper-pagination-bullet-active {
+      @apply bg-secondary;
+    }
+  }
   .modal {
     &.is-open {
       @apply opacity-100 visible;

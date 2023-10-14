@@ -1,22 +1,118 @@
 <!-- buy dialog -->
 
 <div
-  class="modal fixed opacity-0 invisible  transition-all duration-300 inset-0 z-50 h-full w-full bg-black/50 px-4"
+  class="modal fixed opacity-0 invisible transition-all duration-300 inset-0 z-50 h-full w-full bg-black/50 px-4"
   id="buy-dialog"
   aria-hidden="true"
   data-micromodal-close>
   <div class="grid h-full w-full place-content-center">
-    <div class="bg-white max-w-md overflow-hidden rounded-lg" role="dialog" aria-modal="true" aria-labelledby="demo-modal-title-1">
-      <div class="grid grid-cols-2">
-        <button class="bg-white w-52 border-r h-52 p-5 gap-2 group hover:bg-primary transition-colors duration-300 flex flex-col items-center justify-center" type="button">
+    <div class="bg-white max-w-md overflow-hidden rounded-lg" role="dialog" aria-modal="true">
+      <div class="grid grid-cols-1 sm:grid-cols-2">
+        <button
+          data-micromodal-trigger="buy-paper-dialog"
+          class="bg-white w-52 border-r h-52 p-5 gap-2 group max-sm:border-b hover:bg-primary transition-colors duration-300 flex flex-col items-center justify-center"
+          type="button">
           <img src="./img/paper-book.svg" alt="" class="w-12 h-12" />
           <p class="text-base whitespace-nowrap">Друковане видання</p>
-          <p class="font-semibold text-2xl">400₴</p>
+          <p class="font-semibold text-2xl">1399₴</p>
         </button>
-        <button class="bg-white w-52 h-52 p-5 gap-2 group hover:bg-primary transition-colors duration-300 flex flex-col items-center justify-center" type="button">
+        <button
+          class="bg-white w-52 h-52 p-5 gap-2 group hover:bg-primary transition-colors duration-300 flex flex-col items-center justify-center"
+          type="button">
           <img src="./img/ebook.svg" alt="" class="w-12 h-12" />
           <p class="text-base whitespace-nowrap">Електроне видання</p>
-          <p class="font-semibold text-2xl">400₴</p>
+          <p class="font-semibold text-2xl">799₴</p>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- buy paper book dialog -->
+
+<div
+  class="modal fixed transition-all opacity-0 invisible duration-300 inset-0 z-50 h-full w-full bg-black/50 px-4"
+  id="buy-paper-dialog"
+  aria-hidden="true"
+  data-micromodal-close>
+  <div class="grid h-full w-full place-content-center ">
+  
+    <div
+      class="bg-white w-full min-w-full sm:min-w-[500px] overflow-hidden relative p-6 sm:p-8 rounded-lg"
+      role="dialog"
+      aria-modal="true">
+      <button data-micromodal-close class="absolute right-3 top-3" type="button">
+        <svg class="w-6 h-6">
+          <use href="./sprites/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <p class="text-center font-semibold text-2xl md:text-3xl mb-10">Оформлення замовлення</p>
+      <form id="buy-paper-form" action="#" class="gap-6 sm:gap-8 grid grid-cols-1 lg:grid-cols-2 w-full">
+        <div class="w-full">
+          <label for="paperFirstName" class="sr-only">Ім'я</label>
+          <input
+            type="text"
+            id="paperFirstName"
+            placeholder="Ім'я"
+            class="w-full block focus:outline-none border-b focus:border-secondary-light transition-colors text-base md:text-lg" />
+        </div>
+        <div class="w-full">
+          <label for="paperLastName" class="sr-only">Прізвище</label>
+          <input
+            type="text"
+            id="paperLastName"
+            placeholder="Прізвище"
+            class="w-full block focus:outline-none border-b focus:border-secondary-light transition-colors text-base md:text-lg" />
+        </div>
+        <div class="w-full">
+          <label for="paperTel" class="sr-only">Телефон</label>
+          <input
+            type="text"
+            id="paperTel"
+            placeholder="Телефон"
+            class="w-full block focus:outline-none border-b focus:border-secondary-light transition-colors text-base md:text-lg" />
+        </div>
+        <div class="w-full">
+          <label for="paperEmail" class="sr-only">Електронна пошта</label>
+          <input
+            type="text"
+            id="paperEmail"
+            placeholder="Електронна пошта"
+            class="w-full block focus:outline-none border-b focus:border-secondary-light transition-colors text-base md:text-lg" />
+        </div>
+        <div class="w-full">
+          <label for="deliveryMethod" class="sr-only">Метод доставки</label>
+          <select
+            id="deliveryMethod"
+            class="w-full bg-white border-b focus:outline-none focus:border-secondary-light text-base md:text-lg">
+            <option value="nova">Нова Пошта</option>
+            <option value="urk">Укрпошта</option>
+            <option value="meest">Meest</option>
+          </select>
+        </div>
+        <div class="w-full">
+          <label for="city" class="sr-only">Місто</label>
+          <input
+            type="text"
+            id="city"
+            placeholder="Місто"
+            class="w-full block focus:outline-none border-b focus:border-secondary-light transition-colors text-base md:text-lg" />
+        </div>
+        <div class="w-full">
+          <label for="post" class="sr-only">Номер відділення</label>
+          <input
+            type="text"
+            id="post"
+            placeholder="Номер відділення"
+            class="w-full block focus:outline-none border-b focus:border-secondary-light transition-colors text-base md:text-lg" />
+        </div>
+      </form>
+      <div class="flex justify-center mt-10">
+        <button
+          id="buy-paper-book"
+          class="uppercase text-center p-4 bg-secondary max-sm:w-full text-sm sm:text-base xl:text-xl text-white font-bold hover:bg-secondary/80 duration-300 transition-colors"
+          type="button">
+          Придбати книгу — 1399₴
         </button>
       </div>
     </div>
