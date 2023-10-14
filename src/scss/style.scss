@@ -15,6 +15,11 @@
 }
 
 @layer components {
+  .modal {
+    &.is-open {
+      @apply opacity-100 visible;
+    }
+  }
   #burger-inner {
     &.active-burger {
       @apply [&>*:nth-child(-n+3)]:translate-x-10;

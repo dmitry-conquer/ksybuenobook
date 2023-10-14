@@ -1,0 +1,24 @@
+<!-- buy dialog -->
+
+<div
+  class="modal fixed opacity-0 invisible  transition-all duration-300 inset-0 z-50 h-full w-full bg-black/50 px-4"
+  id="buy-dialog"
+  aria-hidden="true"
+  data-micromodal-close>
+  <div class="grid h-full w-full place-content-center">
+    <div class="bg-white max-w-md overflow-hidden rounded-lg" role="dialog" aria-modal="true" aria-labelledby="demo-modal-title-1">
+      <div class="grid grid-cols-2">
+        <button class="bg-white w-52 border-r h-52 p-5 gap-2 group hover:bg-primary transition-colors duration-300 flex flex-col items-center justify-center" type="button">
+          <img src="./img/paper-book.svg" alt="" class="w-12 h-12" />
+          <p class="text-base whitespace-nowrap">Друковане видання</p>
+          <p class="font-semibold text-2xl">400₴</p>
+        </button>
+        <button class="bg-white w-52 h-52 p-5 gap-2 group hover:bg-primary transition-colors duration-300 flex flex-col items-center justify-center" type="button">
+          <img src="./img/ebook.svg" alt="" class="w-12 h-12" />
+          <p class="text-base whitespace-nowrap">Електроне видання</p>
+          <p class="font-semibold text-2xl">400₴</p>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

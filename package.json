@@ -49,6 +49,7 @@
     "gulp-webp": "^4.0.1",
     "gulp-zip": "^5.1.0",
     "htmlhint": "^1.1.4",
+    "js-md5": "^0.8.3",
     "postcss-combine-media-query": "^1.0.1",
     "prettier": "^2.8.8",
     "sass": "^1.62.1",
